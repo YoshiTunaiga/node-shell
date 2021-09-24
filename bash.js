@@ -1,12 +1,14 @@
+// ---YOU HAVE BEEN PROMPT!!------
 process.stdout.write('prompt > ');
 
-process.stdin.on('data', (data) => {
-  const cmd = data.toString().trim();
-  if (cmd === "pwd") {
-    process.stdout.write(__dirname);
-  }
-  process.stdout.write('You typed: ' + cmd);
-  process.stdout.write('\nprompt > ');
+// PWD COMMAND --------
+const pwd = require('./pwd');
+pwd();
 
-})
+// LS COMMAND -----------
+const ls = require('./ls');
+ls();
 
+// CAT COMMAND ------------
+const cat = require('./cat');
+cat()
