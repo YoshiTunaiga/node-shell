@@ -12,3 +12,11 @@ ls();
 // CAT COMMAND ------------
 const cat = require('./cat');
 cat()
+
+// CURL COMMAND -------------
+const curl = require('./curl')
+curl()
+
+const done = (ouput) => {
+  
+}

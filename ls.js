@@ -7,7 +7,7 @@ module.exports = function () {
     // only if ls has been called
     if (lscmd === "ls") {
       fs.readdir('./', 'utf8', (err, files) => {
-        console.log(files);
+        // console.log(files);
         if (err) {
           throw err;
         } else {
